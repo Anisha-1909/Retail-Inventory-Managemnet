@@ -15,3 +15,7 @@ A frontend-based **simple product-level inventory management system to manage pr
 - CSS
 - Javascript
 
+## Run locally
+- Download the zip
+- Open index.html in browser to try the project
+
