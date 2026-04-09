@@ -1,0 +1,61 @@
+ 
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>📦 Inventory Management System</title>
+    <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+
+<h1>📦 Inventory Management System</h1>
+
+<div class="form">
+    <input type="text" id="name" placeholder="Product Name"> 
+    <input type="number" id="price" placeholder="Price">
+    <input type="number" id="qty" placeholder="Quantity">
+ 
+    <select id="category">
+        <option value="Food">Food</option>  
+        <option value="Electronics">Electronics</option>    
+        <option value="Clothing">Clothing</option>  
+        <option value="Home & Kitchen"> Home & Kitchen</option>   
+        <option value="Furniture">Furniture</option> 
+        <option value="Books">Books</option>
+        <option value="stationery">stationery</option>
+        <option value="Footwear">Footwear</option>
+    </select>
+
+    <button onclick="addProduct()">Add Product</button>
+</div>
+
+<!-- Search -->
+<input type="text" id="search" placeholder="Search..." onkeyup="searchProduct()">
+
+<!-- Dashboard -->
+<div class="stats">
+    <p>Total Items: <span id="totalItems">0</span></p>
+    <p>Low Stock: <span id="lowStock">0</span></p>
+</div>
+
+<!-- Table -->
+<table>
+    <thead>
+        <tr>
+            <th>S.no</th>
+            <th>Product Name</th>
+            <th>Price</th>
+            <th>Qty</th>
+            <th>Category</th>
+            <th>Status</th>
+            <th>Actions</th>
+           
+        </tr>
+    </thead>
+    <tbody id="table"></tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
