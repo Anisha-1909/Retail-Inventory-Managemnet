@@ -1,13 +1,12 @@
 
 let products = JSON.parse(localStorage.getItem("products")) || [];
 
-//Save data
+
 function save() { 
     localStorage.setItem("products", JSON.stringify(products));
 
 }
 
-// Display products
 function display(data = products) {
     let table = document.getElementById("table");
     table.innerHTML = "";
@@ -24,9 +23,10 @@ function display(data = products) {
             <td>${p.name}</td>
             <td>₹${p.price}</td>
             <td>${p.qty}</td>
+            <td>₹${p.price*p.qty}</td>
             <td>${p.category}</td>
-            <td class="${p.qty < 5 ? 'low' : ''}">
-                ${p.qty < 5 ? 'Low ⚠️' : 'in-stock'}
+            <td class="${p.qty < 10 ? 'low' : ''}">
+                ${p.qty < 10 ? 'Low ⚠️' : 'in-stock ✅'}
             </td> 
             <td>
                 <button onclick="editProduct(${i})">Edit</button>
@@ -39,13 +39,14 @@ function display(data = products) {
     document.getElementById("totalItems").innerText = products.length;
     document.getElementById("lowStock").innerText = lowCount;
 }
-//Add Product
+
 function addProduct() {
     let name = document.getElementById("name").value;
-    let price = document.getElementById("price").value;
-    let qty = document.getElementById("qty").value;
+    let price = parseFloat(document.getElementById("price").value);
+    let qty = parseInt(document.getElementById("qty").value);
     let category = document.getElementById("category").value;
-
+    let total =price*qty;
+    
     if (!name || !price || !qty) {
         alert("Fill all fields");
         return;
@@ -60,14 +61,14 @@ function addProduct() {
     document.getElementById("qty").value = "";
 }
 
-//Delete product
+
 function deleteProduct(i) {
     products.splice(i, 1);
     save();
     display();
 }
 
-// Edit product
+
 function editProduct(i) {
     let newQty = prompt("Enter new quantity:", products[i].qty);
     if (newQty != null) {
@@ -77,7 +78,7 @@ function editProduct(i) {
     }
 }
 
-//Search products
+
 function searchProduct() {
      
     let value = document.getElementById("search").value.toLowerCase();
