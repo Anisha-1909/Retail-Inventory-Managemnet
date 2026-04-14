@@ -8,6 +8,7 @@ A frontend-based **simple product-level inventory management system to manage pr
 . Add, edit, delete products
 . Search funtionality
 . Low-stock alerts
+. Total calculation
 . Category-wise organization
 
 ## Technologies
@@ -17,5 +18,5 @@ A frontend-based **simple product-level inventory management system to manage pr
 
 ## Run locally
 - Download the zip
-- Open index.html in browser to try the project
+- Open index.html in the browser
 
