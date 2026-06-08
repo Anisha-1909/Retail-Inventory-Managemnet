@@ -106,7 +106,7 @@ function clearAll()
 }
 function sortProducts() 
 { 
-  let sortValue = document.getElementById("sort"value;
+  let sortValue = document.getElementById("sortvalue");
   let sortedProducts = [...products];
 
   if (sortValue === "name") 
