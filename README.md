@@ -1,15 +1,17 @@
 ## Project Title
-Inventory Management System
+Retail Inventory Management 
 
 ## Description
-A frontend-based **simple product-level inventory management system to manage products with CRUD operations**,search functionality,lowstock alerts,and category-wise organization
+A frontend-based **retail inventory management system designed to track,manage and organize retail products in a store.This system helps users and store owners monitor product availability,perform CRUD operations**,search products,identify lowstock items to maintain smooth inventory control
 
 ## Features
 . Add, edit, delete products
 . Search funtionality
-. Low-stock alerts
+. Low-stock alert
 . Total calculation
 . Category-wise organization
+. simple dashboard UI
+
 
 ## Technologies
 - HTML
