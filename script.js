@@ -55,9 +55,7 @@ function addProduct() {
   let category = document.getElementById("category").value;
   let total = price * qty;
 
-  if (!name || !price || !qty) {
-    alert("Fill all fields");
-    return;
+ 
   }
 
   products.push({ name, price, qty, category });
