@@ -1,10 +1,13 @@
   body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #eef2, #f3cd97);
+  background: linear-gradient(to right,rgba(237,229,193,0.133, #f3cd97);
   padding: 20px;
 }
 h1 {
   text-align: center;
+  margin-bottom:10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 26px; 
 }
 .form {
   background: white;
@@ -23,6 +26,8 @@ h1 {
   flex: 1;
   border-radius: 10px;
   outline: 0;
+  font-size:15px;
+  font-family:cambria;
   border: 1px solid #ccc;
   min-width: 180px;
 }
@@ -37,7 +42,7 @@ button {
   width: 10%;
 }
 button:hover {
-  background: #388e3c;
+  background:rgb(2,159,2);
   transform: scale(1.03);
 }
 #search {
@@ -74,7 +79,7 @@ button:hover {
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 700;
   color: #7589a4;
   transition: 0.3s;
 }
@@ -90,6 +95,7 @@ table {
   width: 100%;
   margin-top: 20px;
   background: white;
+  font-family:serif;
   border-collapse: collapse;
   border-radius: 15px;
   overflow: hidden;
