@@ -11,10 +11,7 @@ function display(data = products) {
   let lowCount = 0;
   let inStockCount = 0;
 
-  let inventoryValue = data.reduce(
-    (total, product) => total + product.price * product.qty,
-    0,
-  );
+  
 
   data.forEach((p, i) => {
     if (p.qty < 10) lowCount++;
@@ -44,8 +41,7 @@ function display(data = products) {
   document.getElementById("totalItems").innerText = products.length;
   document.getElementById("lowStock").innerText = lowCount;
   document.getElementById("inStock").innerText = inStockCount;
-  document.getElementById("inventoryvalues").innerText =
-    "₹" + data.reduce((t, p) => t + p.price * p.qty, 0).toLocaleString("en-IN");
+ 
 }
 
 function addProduct() {
