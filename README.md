@@ -8,7 +8,6 @@ A frontend-based **retail inventory management system designed to track,manage a
 . Add, edit, delete products
 . Search funtionality
 . Low-stock alert
-. Total calculation
 . Category-wise organization
 . simple dashboard UI
 
@@ -17,8 +16,4 @@ A frontend-based **retail inventory management system designed to track,manage a
 - HTML
 - CSS
 - Javascript
-
-## Run locally
-- Download the zip
-- Open index.html in the browser
 
