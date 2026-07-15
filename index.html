@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Retail Inventory Management</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1> <span class="material-symbols-outlined">
+storefront
+</span>Retail Inventory Management</h1>
+      
+    <div class="form">
+      <input type="text" id="name" placeholder="Product Name" />
+      <input type="number" id="price" placeholder="Price" />
+      <input type="number" id="qty" placeholder="Quantity" />
+
+      <select id="category">
+        <option disabled selected>Select category</option>
+        <option value="Groceries & Food">Groceries & Food</option>
+         <option value="Snacks & Packaged Foods">Snacks & Packaged Foods</option>  
+        <option value="Beverages">Beverages</option>
+        <option value="Household & Cleaning">Household & Cleaning</option>
+        <option value="Beauty & Personal care">Beauty & Personal care</option> 
+      <option value="others">others</option>
+    </select>
+      <button class="add-btn" onclick="addProduct()">Add Product</button>
+      <button class="clear-btn" onclick="clearAll()">
+        Clear All
+      </button>
+      <input
+        type="text"
+        id="search"
+        placeholder="Search Product..."
+        onkeyup="searchProduct()"
+      />
+        </select>
+      <select id="sort" onchange="sortProducts()">
+        <option value="">Sort By</option>
+        <option value="name">Name(A-Z)</option>
+        <option value="price">Price(Low-high)</option>
+        <option value="category">Category(A-Z)</option>
+      </select>
+</div>
+       <div class="stats">
+      <p class="total-card"><span class="material-symbols-outlined ">inventory</span>Total Items: <span id="totalItems">0</span></p>
+      <p class="low-card"><span class="material-symbols-outlined "> warning</span>Low Stock: </span><span id="lowStock">0</span></p>
+      <p class="stock-card"><span class="material-symbols-outlined ">check_circle</span>In-Stock:</span><span id="inStock">0</span></p>
+       
+    
+  </div>  
+    <table>
+      <thead>
+        <tr>
+          <th>S.no</th>
+          <th>Product Name</th>
+          <th>Price</th>
+          <th>Qty</th>
+          <th>Total</th>
+          <th>Category</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+        </thead>
+      </thead>
+      <tbody id="table"></tbody>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>
