@@ -14,7 +14,7 @@ A frontend-based **retail inventory management system designed to manage invento
 
  ### Technologies Used
 
-* HTML5– tructure and layout of the application
+* HTML– structure and layout of the application
 * CSS– Styling, responsive design, and user interface
 * JavaScript  – CRUD operations, search, sorting, dashboard functionality, and DOM manipulation
 * Google Material Symbols– Icons for the user interface
